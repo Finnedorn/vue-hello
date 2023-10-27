@@ -1,0 +1,27 @@
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    color: #f6969c;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.colored {
+    color: #492907 !important;
+    transition: all 0.5s;
+}
+
+.cute-bg {
+    height: 550px !important;
+    background-image: url(https://wallpaperaccess.com/full/122677.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+img {
+    transition: all 0.5s;
+}
