@@ -26,8 +26,18 @@ const miaApp = createApp({
         //se la funzione avesse parametri dovrei specificarli pure nell'html
         classChanger() {
             this.getColored = !this.getColored;
+        },
+        prova() {
+            this.person.push({
+                name: 'Gino',
+                id: 4
+            });
+            console.log(this.person);
         }
+    },
+    mounted() {
+        console.log('mounted')
     }
 });
-//nota! ricordati ogni volata di linkare il macro div in cui lavorerai !!!!
+//nota! ricordati ogni volta di linkare il macro div in cui lavorerai !!!!
 miaApp.mount('#app');

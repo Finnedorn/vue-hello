@@ -46,16 +46,20 @@
           alt="photo-of-pusheen"
         />
       </div>
-      <!--v-for crea un ciclo for che stampa un li per ogni item nell'array person-->
+      <div class="container">
+        <!--v-for crea un ciclo for che stampa un li per ogni item nell'array person-->
         <!--non posso inserire un v-if nello stesos elemento in cui ho piazzato unn v-for!!!-->
         <ul>
-          <li v-for="(item,index) in person" :key="index">
-            <!--posso usare un v-if perchè non nello stesso tag di v-for, in questo caso, stampa tutti gli item tranne enzo-->
+          <h3>esempio con v-for</h3>
+          <li v-for="(item,index) in person" :key="item.id">
+           <!--posso usare un v-if perchè non nello stesso tag di v-for, in questo caso, stampa tutti gli item tranne enzo-->
             <div v-if="item !=='enzo'">
               {{item.name}} - {{item.id}} - {{index}}
             </div>
           </li>
         </ul>
+        <button @click="prova">Cliccami</button>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
