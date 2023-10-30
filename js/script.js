@@ -5,7 +5,21 @@ const miaApp = createApp({
         return {
             title: 'Il mio primo Esercizio con Vue',
             getColored: true,
-            pusheenImg: "img/88364-brown-pusheen-rectangle-cat-free-png-hq.jpeg"
+            pusheenImg: "img/88364-brown-pusheen-rectangle-cat-free-png-hq.jpeg",
+            person:[
+                {
+                    name:'Michele',
+                    id: 1
+                },
+                {
+                    name:'Gianni',
+                    id: 2
+                },
+                {
+                    name:'Cettina',
+                    id: 3
+                }
+            ]
         }
     },
     methods: {
